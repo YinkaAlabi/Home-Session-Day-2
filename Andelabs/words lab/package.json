@@ -1,0 +1,11 @@
+{
+  "name": "words-lab",
+  "version": "1.0.0",
+  "description": "Word Frequency in given string of words",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine test.js"
+  },
+  "author": "Yinka Alabi",
+  "license": "ISC"
+}
