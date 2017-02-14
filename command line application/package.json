@@ -1,0 +1,11 @@
+{
+  "name": "command-line-application",
+  "version": "1.0.0",
+  "description": "Command Line Application that consumes a github emoji api using a HTTP client library",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Yinka Alabi",
+  "license": "ISC"
+}
