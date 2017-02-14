@@ -1,0 +1,11 @@
+{
+  "name": "reverse-string-lab",
+  "version": "1.0.0",
+  "description": "Reverses a word passed in as argument",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine tests.js"
+  },
+  "author": "Yinka Alabi",
+  "license": "ISC"
+}
