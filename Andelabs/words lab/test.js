@@ -55,4 +55,15 @@ describe("words()", function() {
     var expectedCounts = { reserved: 1, words : 1, like :1,  prototype: 1, and : 1, toString: 1,  "ok?": 1};
     expect(app.words("reserved words like prototype and toString ok?")).toEqual(expectedCounts);
   });
+
+  it("ignores spaces at the beginning and end of the string", function() {
+    var expectedCounts = { hello: 1, world: 1 };
+    expect(app.words(" \n hello world   \t")).toEqual(expectedCounts);
+  });
+
+  it("identifies words uniquely and ignores a word that is a  substring of another", function() {
+    var expectedCounts = { this: 1, "isn't": 1, isis: 1, is: 1, "it?": 1};
+    expect(app.words("this isn't isis is it?")).toEqual(expectedCounts);
+  });
+
 });
